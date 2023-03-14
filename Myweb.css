@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+/*공통 부분*/
+*{
+  margin: 0;
+  padding: 0;
+  /*font-family: 'Stylish', sans-serif;*/
+  font-family: 'Source Code Pro', monospace;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#loginWrap{
+  position: fixed;
+  top: 9.8%;
+  left: 1%;
+  width: 18%;
+  height: 15%;
+  background: white;
+  display: none;
+  z-index: 99;
+}
+
+#tableWrap{
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+#loginBtn{
+  width: 100%;
+  height: 30px;
+}
+
+.s:focus{
+  outline: none;
+}
+
+
+
+/*nav 버튼*/
+
+#navBtn{
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+  z-index: 99;
+}
+
+#navBtn>img{
+  width: 100%;
+  height: 100%;
+}
+
+/*전체 Wrap*/
+
+#mainWrap{
+  width: 100%;
+  height: 1005px;
+  overflow: hidden;
+  position: relative;
+  transition: 1s;
+}
+
+#userInfo{
+  width: 90%;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+#welcome{
+  margin-top: 30px;
+}
+
+#userImg{
+  width: 40%;
+  height: 100%;
+  float: left;
+  font-size: 100px;
+  position: relative;
+}
+
+#userIcon1{
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#userIcon2{
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#userInfoP{
+  width: 60%;
+  height: 100%;
+  float: right;
+}
+
+#userInfo>#signUp{
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  background: black;
+  color: white;
+  position: absolute;
+  top: 21%;
+  right: 30%;
+  margin-right: -50px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+#userInfo>#signIn{
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  background: black;
+  color: white;
+  position: absolute;
+  top: 21%;
+  left: 20%;
+  margin-right: -50px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 10px;
+  transition: 0.5s;   
+}
+
+#userInfo>#signUp:hover{
+  background: gray;
+  color: black;
+}
+
+#userInfo>#signIn:hover{
+  background: gray;
+  color: black;
+}
+
+/*사이드 바 Wrap*/
+
+#navWrap{
+  width: 20%;
+  height: 100%;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: -20%;
+  transition: 1s;
+}
+
+
+#gnb{
+  width: 98%;
+  height: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#gnb>li{
+  width: 100%;
+  height: 10%;
+  border: 1px solid gray;
+  transition: 1s;
+}
+#gnb>li>a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 80px;
+  text-align: center;
+}
+#gnb>li:hover{
+  height: 15%;
+  line-height: 114.5px;
+  background: rgba(128, 128, 128,0.8);
+  
+}
+
+#gnb>li:hover>a{
+  color: white;
+}
+/*메인콘텐츠 Wrap*/
+
+#conWrap{
+  width: 100%;
+  height: 100%;
+  float: right;
+  transition: 1s;
+  background: url(img/main1.jpg) no-repeat;
+  background-size: cover;
+}
+
+#grayWall{
+  width: 100%;
+  height: 100%;
+  background: none;
+  transition: 1s;
+  position: relative;
+  z-index: 98;
+}
+
+/*#conWrap:hover{
+  perspective: 1500px;
+}*/
+
+#conWrap:hover>#grayWall{
+  display: inline-block;
+  background: rgba(46, 45, 45,0.3);
+}
+
+#grayWall>div{
+  width: 49%;
+  height: 50%;
+  float: left;
+  display: none;
+  transition: 2s;
+  border : 1px black solid;
+  position: relative;
+  overflow: hidden;
+}
+
+#grayWall>div>img{
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+#grayWall>div>img:hover{
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+}
+
+#grayWall>div:hover>p{
+    display: block;
+}
+
+.con1,.con3{
+  margin-left: 10px;
+}
+
+#grayWall>.s{
+  display: block;
+  transition: 1s;
+}
+
+#grayWall>div>p{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 150px;
+  background: rgba(128, 128, 128,0.8);
+  padding-top: 10px;
+  padding-left: 10px;
+  transition: 1s;
+  display: none;
+  color: white;
+}
+
+
+#grayWall>div>p>a{
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: inherit;
+  text-align: center;
+  line-height: 50px;
+  border: 1px black solid;
+  color: white;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) { 
+
+
+  #userInfo{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: hidden;
+  }
+  
+  #welcome{
+    margin-top: 30px;
+  }
+  
+  #userImg{
+    display: none;
+  }
+  
+  #userIcon1{
+    display: none;
+  }
+  
+  #userIcon2{
+    display: none;
+  }
+  
+  #userInfoP{
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+#userInfo>#signUp{
+  width: 100px;
+  height: 30px;
+  top: 24%;
+  right:0;
+  left: 20%;
+}
+
+#userInfo>#signIn{
+  width: 100px;
+  height: 30px;
+  top: 20%;
+  left: 20%;
+}
+
+
+/*************/
+
+/*사이드 바 Wrap*/
+
+#gnb{
+  width: 98%;
+  height: 800px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+#gnb>li{
+  width: 100%;
+  height: 10%;
+  border: 1px solid gray;
+  transition: 1s;
+}
+
+#grayWall>div{
+  width: 100%;
+  height: 50%;
+}
+.con1{
+  margin-left: 0px;
+}
+.con3,.con4{
+  display:none;
+}
+
+#grayWall>div>p{
+  height: 15%;
+  background: rgba(128, 128, 128,0.8);
+  padding-top: 10px;
+  padding-left: 10px;
+  transition: 1s;
+  display: none;
+  color: white;
+}
+
+
+#grayWall>div>p>a{
+  display: none;
+}
+
+
+#loginWrap{
+  position: fixed;
+  top: 9.8%;
+  left: 25%;
+  width: 35%;
+  height: 10%;
+  background: white;
+  display: none;
+  z-index: 99;
+}
+
+#tableWrap{
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+#loginBtn{
+  width: 100%;
+  height: 30px;
+}
+
+.s:focus{
+  outline: none;
+}
+
+
+}
+
+@media screen and (min-width:480px) and (max-width:767px) { 
+  #userInfo{
+    width: 0%;
+    height: 0;
+    margin-top: 0px;
+  }
+  
+  #userImg{
+    display:none;
+  }
+  
+  #userInfoP{
+    display:none;
+  }
+  
+  #userInfo>#signUp{
+    top: 14%;
+    left: 15%;
+  }
+  
+  #userInfo>#signIn{
+    top: 10%;
+    left: 15%;
+  }
+  
+  
+  /*************/
+  
+  /*사이드 바 Wrap*/
+  
+  #gnb{
+    width: 98%;
+    height: 800px;
+    margin-top: 180px;
+  }
+
+  #gnb>li:hover{
+    height: 10%;
+    line-height: 80px;
+    background: rgba(128, 128, 128,0.8);
+    
+  }
+
+  
+  #grayWall>div{
+    width: 100%;
+    height: 50%;
+  }
+  
+  #grayWall>div{
+    width: 100%;
+    height: 50%;
+  }
+  .con1{
+    margin-left: 0px;
+  }
+  .con3,.con4{
+    display:none;
+  }
+
+  #grayWall>div>p{
+    display:none;
+  }
+
+  #grayWall>div>p{
+    display:none;
+  }
+
+  #grayWall>div>p>a{
+    display: none;
+  }
+
+  #grayWall>div:hover>p{
+    display: none;
+}
+
+#loginWrap{
+  position: fixed;
+  top: 9.8%;
+  left: 25%;
+  width: 45%;
+  height: 10%;
+  background: white;
+  display: none;
+  z-index: 99;
+}
+
+#tableWrap{
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+#loginBtn{
+  width: 100%;
+  height: 30px;
+}
+
+.s:focus{
+  outline: none;
+}
+
+}
+
+@media screen and (max-width:479px) { 
+
+  #navBtn{
+    display: none;
+  }
+
+  #userInfo>#signUp{
+    top: 10%;
+    left: 20%;
+  }
+  
+  #userInfo>#signIn{
+    top: 10%;
+    left: 50%;
+  }
+
+  #userInfo{
+    width: 0%;
+    height: 0;
+    margin-top: 0px;
+  }
+  
+
+#userInfo>#signUp{
+  width: 100px;
+  height: 30px;
+  top: 10%;
+  right:0;
+  left: 25%;
+}
+
+#userInfo>#signIn{
+  width: 100px;
+  height: 30px;
+  top: 5%;
+  left: 25%;
+}
+  
+  
+  /*************/
+  
+  /*사이드 바 Wrap*/
+  
+  #navWrap{
+    position:fixed;
+    top:0%;
+    left:0;
+    width: 100%;
+  }
+  #gnb{
+    position:fixed;
+    width: 100%;
+    height: 800px;
+    margin-top: 180px;
+  }
+
+  #gnb>li:hover{
+    height: 10%;
+    line-height: 80px;
+    background: rgba(128, 128, 128,0.8);
+    
+  }
+
+  #conWrap{
+    display:none;
+  }
+  
+  #grayWall>div{
+    display:none;
+  }
+  
+  #grayWall>div{
+    width: 100%;
+    height: 50%;
+  }
+  .con1{
+    margin-left: 0px;
+  }
+  .con3,.con4{
+    display:none;
+  }
+
+  #grayWall>div>p{
+    display:none;
+  }
+
+  #grayWall>div>p{
+    display:none;
+  }
+
+  #grayWall>div>p>a{
+    display: none;
+  }
+
+  #grayWall>div:hover>p{
+    display: none;
+}
+}
+
+

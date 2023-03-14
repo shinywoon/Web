@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Stylish', sans-serif;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+header{
+  width: 100%;
+  height: 400px;
+  background: black;
+}
+
+header>a{
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 400px;
+  font-size: 200px;
+  color: white;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+#string{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#string>p{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 70px;  
+}
+
+#string>hr{
+  height: 5px;
+  background: black;
+  margin-bottom: 30px;
+}
+
+#nav{
+  width: 100%;
+  height: 100px;
+}
+#nav>li{
+  width: 25%;
+  height: 50px;
+  background: black;
+  float: left;
+  position: relative;
+}
+
+#nav>li:last-child{
+  width: 49.8%;
+  border: 1px solid gray;
+}
+
+#nav>li>a{
+  display: inline-block;
+  width: 99.5%;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px gray solid;
+  color: white;
+}
+
+#nav>li:hover>ul{
+  height: 250px;
+}
+
+#nav>li>ul{
+  width: 100%;
+  height: 0px;
+  overflow: scroll;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  transition: 1s;
+  border: 0.5px black solid;
+}
+
+#nav>li>ul>li{
+  width: 100%;
+  height: 50px;
+  background: darkgray;
+  border-bottom: 0.5px dotted black;
+}
+#nav>li>ul>li>a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  transition: 1s;
+}
+
+#nav>li>ul>li>a:hover{
+  background: black;
+  color: white;
+  font-size: 24px;
+}
+
+#nav>li>input[type='text']{
+  width: 80%;
+  height: 80%;
+  margin-left: 3%;
+  margin-top: 0.5%;
+  background: black;
+  border-style: none;
+  font-size: 20px;
+  color: white;
+}
+#nav>li>input[type='text']::placeholder{
+  color: white;
+  font-size: 20px;
+}
+
+#nav>li>input[type='text']:focus{
+  outline: none;
+}
+#nav>li>input[type='button']{
+  width: 15%;
+  height: 100%;
+  float: right;
+  font-size: 20px;
+}
+
+#seWrap{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.loWrap{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 3px solid black;
+}
+
+.imgWrap{
+  width: 20%;
+  height: 100%;
+  float: left;
+  background: black;
+}
+.imgWrap>a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.imgWrap>a>img{
+  width: 98%;
+  height: 100%;
+  margin-left: 5px;
+}
+
+.str{
+  width: 60%;
+  height: 100%;
+  float: left;
+  background: white;
+  overflow: hidden;
+}
+
+.str>p{
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+
+.resiBtn{
+  width: 20%;
+  height: 100%;
+  float: right;
+  background: black;
+}
+
+.resiBtn>a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 300px;
+  color: white;
+}

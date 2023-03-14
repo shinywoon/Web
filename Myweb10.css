@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Stylish', sans-serif;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+header{
+  width: 100%;
+  height: 400px;
+  background: black;
+}
+
+header>a{
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 400px;
+  font-size: 200px;
+  color: white;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+#nav{
+  width: 100%;
+  height: 50px;
+  background: darkgray;
+}
+
+#nav>ul{
+  width: 60%;
+  height: 100%;
+  background: rgba(80, 80, 80, 0.8);
+  margin: 0 auto;
+  position: relative;
+}
+
+#nav>ul>li{
+  width: 33.3333%;
+  height: 100%;
+  float: left;
+}
+
+
+#nav>ul>li>a{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+
+#unbar{
+  position: absolute;
+  width: 33.3333%;
+  height: 10px;
+  background:black;
+  bottom: 0;
+  transition: 1.5s;
+}
+
+#Wrap{
+  width: 60%;
+  height: 550px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#memberWrap{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: white;
+  transition: 1s;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+#memberWrap>.h{
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#memberWrap>div{
+  width: 33.3333%;
+  height: 90%;
+  overflow: auto;
+  float: left;
+}
+
+#gold>.card{
+  width: 80%;
+  height: 150px;
+  background: gold;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+#silver>.card{
+  width: 80%;
+  height: 150px;
+  background: silver;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+#bronze>.card{
+  width: 80%;
+  height: 150px;
+  background: sienna;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+
+#inner{
+  width: 90%;
+  height: 80%;
+  border: 2px black solid;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 2px;
+}
+
+#memberWrap>div>p{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+
+#disWrap{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: white;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  z-index: 98;
+}
+
+#disWrap>.h{
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#str{
+  width: 80%;
+  font-size: 30px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+#str>span{
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+#cupon{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: white;
+  transition: 1s;
+  top: 0;
+  left: 0;
+  z-index: 98;
+}
+
+#cupon>.h{
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+
+
+#cupon>div{
+  width: 33.3333%;
+  height: 90%;
+  overflow: auto;
+  float: left;
+}
+
+#fir>.card{
+  width: 80%;
+  height: 150px;
+  background: pink;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+#se>.card{
+  width: 80%;
+  height: 150px;
+  background: skyblue;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+#th>.card{
+  width: 80%;
+  height: 150px;
+  background: azure;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+
+.card>.inner{
+  width: 90%;
+  height: 80%;
+  border: 2px black solid;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 2px;
+}
+
+#cupon>div>p{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  line-height: 50px;
+  font-size: 30px;
+}

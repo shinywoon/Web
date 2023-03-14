@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Stylish', sans-serif;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+header{
+  width: 100%;
+  height: 400px;
+  background: black;
+}
+
+header>a{
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 400px;
+  font-size: 200px;
+  color: white;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+#mainWrap{
+  width: 100%;
+  height: 1000px;
+  background-color: black;
+  position: relative;
+}
+
+#con1Wrap,#con3Wrap{
+  width: 100%;
+  height: 50%;
+}
+
+#mainWrap>#con1Wrap>p, #mainWrap>#con3Wrap>p{
+  position: absolute;
+  top: 24%;
+  left: 20%;
+  color: white;
+  transition: 1s;
+  display: none;
+}
+
+#mainWrap>#con1Wrap>h1,#mainWrap>#con3Wrap>h1{
+  position: absolute;
+  top: 19%;
+  left: 20%;
+  color: white;
+  transition: 1s;
+  display: none;
+}
+
+#mainWrap>#con3Wrap>h1{
+  top: 62%;
+  left: 20%;
+}
+
+#mainWrap>#con3Wrap>p{
+  top: 67%;
+  left: 20%;
+}
+
+#imgWrap1,#imgWrap3{
+  position: absolute;
+  top: 17%;
+  right: 20%;
+  width: 30%;
+  height: 300px;
+  transition: 1s;
+  display: none;
+}
+
+#imgWrap3{
+  top: 70%;
+}
+
+#imgWrap1>img{
+  width: 80%;
+  height: 100%;
+}
+
+#imgWrap3>img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#mainWrap>#con2Wrap>p{
+  position: absolute;
+  top: 47%;
+  right: 27%;
+  color: white;
+  transition: 1s;
+  display: none;
+}
+
+#mainWrap>#con2Wrap>h1{
+  position: absolute;
+  top: 42%;
+  right: 35.5%;
+  color: white;
+  transition: 1s;
+  display: none;
+}
+
+#imgWrap2{
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 30%;
+  height: 300px;
+  transition: 1s;
+  display: none;
+}
+
+#imgWrap2>img{
+  width: 100%;
+  height: 100%;
+}
+
+#con4Wrap,#con5Wrap{
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+
+#con4-1,#con5-1{
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: white;
+  position: relative;
+}
+
+#con5-1{
+  background: black;
+}
+
+#con4-2,#con5-2{
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: black;
+  position: relative;
+}
+
+#con5-2{
+  background: white;
+}
+
+#con4-1>.imgWrap,#con5-2>.imgWrap{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  margin-left: -25%;
+  margin-top: -25%;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+}
+
+#con4-2>.imgWrap,#con5-1>.imgWrap{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  margin-left: -38%;
+  margin-top: -45%;
+}

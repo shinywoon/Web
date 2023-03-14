@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Stylish', sans-serif;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+header{
+  width: 100%;
+  height: 400px;
+  background: black;
+}
+
+header>a{
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 400px;
+  font-size: 200px;
+  color: white;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+#string{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#string>p{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 70px;  
+}
+
+#string>hr{
+  height: 5px;
+  background: black;
+  margin-bottom: 10px;
+}
+
+#string>#st2{
+  color: gray;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#string>#hr2{
+  height: 1px;
+  background: black;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+#loDeWrap{
+  width: 70%;
+  height: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+#imgWrap{
+  width: 40%;
+  height: 600px;
+  background: cornsilk;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+#panel{
+  width: 400%;
+  height: 100%;
+  position: relative;
+  transition: 2s;
+}
+
+#panel>li{
+  width: 25%;
+  height: 100%;
+  background: chocolate;
+  float: left;
+}
+
+#panel>li>img{
+  width: 100%;
+  height: 100%;
+}
+
+#str{
+  position: relative;
+  width: 60%;
+  height: 600px;
+  float: left;
+}
+
+#str>.info{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+#imgBtn{
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 50px;
+  overflow: hidden;
+  z-index: 99;
+}
+
+#imgBtn>li{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+#imgBtn>li>div{
+  width: 25%;
+  height: 25%;
+  margin: 0 auto;
+  margin-top: 40%;
+  background: gray;
+  border-radius: 50%; 
+}
+
+#imgBtn>li>.target{
+  background: black;
+  border: 1px gray solid;
+}
+
+#goRe{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background: black;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}

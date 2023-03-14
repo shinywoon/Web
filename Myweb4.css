@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Stylish', sans-serif;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+header{
+  width: 100%;
+  height: 400px;
+  background: black;
+}
+
+header>a{
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 400px;
+  font-size: 200px;
+  color: white;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+section{
+  width: 80%;
+  margin: 0 auto;
+}
+
+section>#imgWrap{
+  width: 30%;
+  height: 500px;
+  background: gainsboro;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+section>#imgWrap>img{
+  width: 95%;
+  height: 100%;
+  border: 2px gray solid;
+  margin-left: 2%;
+}
+
+#inpo{
+  width: 70%;
+  height: 500px;
+  float: right;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#inpo>form{
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#inpo>form>table>tbody>tr{
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+#inpo>form>table>tbody>tr>td{
+  font-size: 50px;
+  line-height: 100px;
+}
+
+#inpo>form>table>tbody>tr>td>input[type="number"]{
+  position: absolute;
+  top: 33.3%;
+  left: 20%;
+  display: inline-block;
+  margin-top: -30px;
+  line-height: 20px;
+  width: 150px;
+  height: 30px;
+  font-size: 30px;
+}
+
+#inpo>form>table>tbody>tr>td>select{
+  position: absolute;
+  bottom: 25%;
+  left: 20%;
+  display: inline-block;
+  margin-top: -30px;
+  line-height: 20px;
+  width: 230px;
+  height: 35px;
+  font-size: 30px;
+}
+
+#inpo>form>table>tbody>tr>td>input[type="text"]{
+  position: absolute;
+  bottom: 3.5%;
+  left: 20%;
+  display: inline-block;
+  margin-top: -30px;
+  line-height: 20px;
+  width: 230px;
+  height: 35px;
+  font-size: 30px;
+}
